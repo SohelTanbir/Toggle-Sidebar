@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Toggle Sidebar</title>
+        <!--google fonts-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+            rel="stylesheet">
+        <!--fontawesome cdn-->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!--main stylesheet-->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <!--Header Start-->
+        <header id="header-section">
+            <div class="container">
+                <div class="row">
+                    <div class="logo">
+                        <div class="row">
+                            <a href="index.html">Brand Logo</a>
+                            <span class="toggle-icon">
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--Header End-->
+
+
+        <!--Main Start-->
+        <main>
+            <div class="row">
+                <div class="sidebar">
+                    <ul class="sidebar-list">
+                        <li><a href="#"><span class="left-icon"><i
+                                        class="fa-solid fa-layer-group"></i></span>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="user">
+                            <a href="#">
+                                <span class="left-icon"><i class="fa-solid
+                                        fa-users"></i></span>
+                                Users
+                                <span class="right-icon">
+                                    <i class="fa-solid fa-angle-down angle_down
+                                        1"></i>
+                                    <i class="fa-solid fa-angle-up angle_up 1"></i>
+                                </span>
+                            </a>
+                            <ul class="sidebar-sub-list">
+                                <li><a href="#">
+                                        <span class="left-icon"><i
+                                                class="fa-solid fa-users"></i></span>
+                                        Total users
+                                    </a></li>
+                                <li><a href="#">
+                                        <span class="left-icon"><i
+                                                class="fa-solid fa-user"></i></span>
+                                        New users
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <span class="left-icon"><i
+                                                class="fa-solid fa-users"></i></span>
+                                        Special users
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="message">
+                            <a href="#">
+                                <span class="left-icon"><i class="fa-solid
+                                        fa-envelope"></i></span>
+                                Message
+                                <span class="right-icon">
+                                    <i class="fa-solid fa-angle-down
+                                        angle_down"></i>
+                                    <i class="fa-solid fa-angle-up angle_up"></i>
+                                </span>
+                            </a>
+                            <ul class="sidebar-sub-list">
+                                <li><a href="#">
+                                        <span class="left-icon"><i
+                                                class="fa-solid fa-envelope"></i></span>
+                                        New message
+                                    </a></li>
+
+                            </ul>
+                        </li>
+                        <li class="bookmark">
+                            <a href="#">
+                                <span class="left-icon"><i class="fa-solid
+                                        fa-bookmark"></i></span>
+                                Bookmark
+                                <span class="right-icon">
+                                    <i class="fa-solid fa-angle-down
+                                        angle_down"></i>
+                                    <i class="fa-solid fa-angle-up angle_up"></i>
+                                </span>
+                            </a>
+                            <ul class="sidebar-sub-list">
+                                <li><a href="#">
+                                        <span class="left-icon"><i class="fa-solid fa-square-plus"></i></span>
+                                        Add new 
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <span class="left-icon"><i class="fa-solid fa-square-minus"></i></span>
+                                        Remove
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="file">
+                            <a href="#">
+                                <span class="left-icon"><i class="fa-solid
+                                        fa-file"></i></span>
+                                Files
+                                <span class="right-icon">
+                                    <i class="fa-solid fa-angle-down
+                                        angle_down"></i>
+                                    <i class="fa-solid fa-angle-up angle_up"></i>
+                                </span>
+                            </a>
+                            <ul class="sidebar-sub-list">
+                                <li><a href="#">
+                                        <span class="left-icon"><i class="fa-solid fa-square-plus"></i></span>
+                                        New File
+                                    </a></li>
+                                <li><a href="#">
+                                        <span class="left-icon"><i class="fa-solid fa-trash-can"></i></span>
+                                        Delete file
+                                    </a></li>
+
+                            </ul>
+                        </li>
+                        <li class="stats">
+                            <a href="#">
+                                <span class="left-icon"><i class="fa-brands
+                                        fa-staylinked"></i></span>
+                                Stats
+                                <span class="right-icon">
+                                    <i class="fa-solid fa-angle-down
+                                        angle_down"></i>
+                                    <i class="fa-solid fa-angle-up angle_up"></i>
+                                </span>
+                            </a>
+                            <ul class="sidebar-sub-list">
+                                <li><a href="#">
+                                        <span class="left-icon"><i class="fa-solid fa-square-plus"></i></span>
+                                        New stats
+                                    </a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="left-icon"><i class="fa-solid
+                                        fa-arrow-right-from-bracket"></i></span>
+                                SignOut
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-content">
+                    <h3>main content will be here</h3>
+                </div>
+            </div>
+        </main>
+        <!--Main End-->
+
+
+
+
+
+
+
+
+
+
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

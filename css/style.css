@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background: #f1f1f1;
+}
+.container{
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+/*Header section style*/
+#header-section{
+    background: #0b1997;
+    padding:15px 0;
+}
+.logo{
+    width: 20%;
+}
+.logo span{
+    font-size:18px;
+    color: #d3d3d3;
+    cursor: pointer;
+}
+.logo a{
+    font-size:18px;
+    font-weight: 700;
+    color: #d3d3d3;
+    cursor: pointer;
+}
+.menu{
+    width: 70%;
+}
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.menu ul li a{
+    font-size:18px;
+    color: #d3d3d3;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+/* sidebar style */
+.sidebar{
+    position: relative;
+    width: 20%;
+    height: 100vh;
+    background:#4723D9;
+    padding-top:55px;
+    padding-left: 30px;
+}
+.sidebar .sidebar-list li{
+    margin-bottom: 30px;
+}
+.sidebar .sidebar-list li a{
+    font-size: 18px;
+    color: #ebebeb;
+}
+.sidebar .sidebar-list li:last-child{
+    margin-top: 90%;
+}
+.sidebar .sidebar-list li a .left-icon{
+    margin-right: 10px;
+}
+.sidebar .sidebar-list li a .right-icon{
+    position: absolute;
+    right: 15%;
+}
+.sidebar .sidebar-list li a .right-icon i{
+    position: absolute;
+    transition: all 5s ease ;
+}
+.sidebar .sidebar-list li a .right-icon i:hover i{
+    font-size: 50px;
+}
+.sidebar .sidebar-list li a .right-icon i.angle_up{
+    display: none;
+}
+/*sidebar sub list item*/
+.sidebar-sub-list{
+    display: none;
+    width: 80%;
+    background: #3616bb;
+    padding: 10px 20px 5px;
+    margin-left: 26px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.sidebar-sub-list li{
+    margin-bottom: 10px!important;
+}
+.sidebar-sub-list li a{
+    font-size: 16px!important;
+    color: #d3d3d3!important;
+}
+.sidebar-sub-list li:last-child{
+    margin-top: 0!important;
+}
+
+.main-content{
+    width: 80%;
+    min-height: 100vh;
+    background: #edeef5;
+    padding: 10px;
+}
