@@ -1,6 +1,14 @@
 $(document).ready(function(){
     
-// select sidebar right icon
+// toggle sidebar
+$(".toggle-icon").click(function(){
+    $(".main-content").toggleClass("main-content-toggle");
+    $(".toggle-icon .fa-bars").toggle()
+    $(".toggle-icon .fa-xmark").toggle()
+})
+
+
+// toggle sidebar sub list item
 $(".sidebar-list li.user").click(function(){
     $(".sidebar-list li.user .angle_down").toggle()
     $(".sidebar-list li.user .angle_up").toggle();
@@ -26,6 +34,12 @@ $(".sidebar-list li.stats").click(function(){
     $(".sidebar-list li.stats .angle_up").toggle();
     $(".sidebar-list li.stats .sidebar-sub-list").slideToggle();
 })
+$(".sidebar-list li").click(function(){
+    console.log($(".sidebar-list li"));
+});
+
+
+
 
 
 

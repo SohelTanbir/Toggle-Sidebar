@@ -40,6 +40,11 @@ ul{
     font-size:18px;
     color: #d3d3d3;
     cursor: pointer;
+    position: relative;
+}
+.logo span i:last-child{
+    display: none;
+    font-size: 20px;
 }
 .logo a{
     font-size:18px;
@@ -66,7 +71,7 @@ ul{
     position: relative;
     width: 20%;
     height: 100vh;
-    background:#4723D9;
+    background:#2c0ea7;
     padding-top:55px;
     padding-left: 30px;
 }
@@ -81,7 +86,7 @@ ul{
     margin-top: 90%;
 }
 .sidebar .sidebar-list li a .left-icon{
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .sidebar .sidebar-list li a .right-icon{
     position: absolute;
@@ -89,7 +94,7 @@ ul{
 }
 .sidebar .sidebar-list li a .right-icon i{
     position: absolute;
-    transition: all 5s ease ;
+    transition: all .5s ease ;
 }
 .sidebar .sidebar-list li a .right-icon i:hover i{
     font-size: 50px;
@@ -117,10 +122,19 @@ ul{
 .sidebar-sub-list li:last-child{
     margin-top: 0!important;
 }
+/*toggle sidebar add and remove the class*/
+.main-content-toggle{
+    position: absolute;
+    right: 0;
+    width: 95%!important;
+    transition: all .2s;
+}
+
 
 .main-content{
     width: 80%;
-    min-height: 100vh;
+    height: 100vh;
     background: #edeef5;
     padding: 10px;
+    transition: all .2s;
 }
