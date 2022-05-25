@@ -19,15 +19,25 @@ $(".sidebar-list li").click(function(){
     }
     // toggle show class 
     targetElement.classList.toggle("show");
-});
+    // set default width on main-content if toggle sub list item on sidebar 
+    const mainContent =  document.querySelector(".main-content");
+    if(mainContent.classList.contains("main-content-toggle")){
+         $(".main-content").removeClass("main-content-toggle");
+         $(".toggle-icon .fa-bars").toggle();
+         $(".toggle-icon .fa-xmark").toggle();
+         $(".sidebar .sidebar-list li a .left-icon").toggleClass("mr-22");
+    }
+    
+    // $(".main-content").removeClass("main-content-toggle");
+    // $(".main-content").toggleClass("main-content-toggle");
 
+});
 // toggle list item right icon of sidebar
 $(".sidebar-list li").click(function(){
     const activeElement =this.children[0].children[1];
-
-    console.log(activeElement.children[0].classList.toggle("hide"));
-    console.log(activeElement.children[1].classList.toggle("angle_up"));
-
+    // toggle angle down and up icon 
+    activeElement.children[0].classList.toggle("hide");
+    activeElement.children[1].classList.toggle("angle_up");
 });
 
 
