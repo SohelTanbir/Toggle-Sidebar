@@ -19,10 +19,14 @@ $(".sidebar-list li").click(function(){
     }
     // toggle show class 
     targetElement.classList.toggle("show");
-    console.log(targetElement.parentNode.children[0].children[0])
-    console.log(targetElement.parentNode.children[0].children[1])
-    // targetElement.parentNode.children[0].children[0].toggle();
-    // targetElement.parentNode.children[0].children[1].toggle();
+});
+
+// toggle list item right icon of sidebar
+$(".sidebar-list li").click(function(){
+    const activeElement =this.children[0].children[1];
+
+    console.log(activeElement.children[0].classList.toggle("hide"));
+    console.log(activeElement.children[1].classList.toggle("angle_up"));
 
 });
 

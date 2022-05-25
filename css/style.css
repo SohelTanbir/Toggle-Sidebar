@@ -129,6 +129,9 @@ ul{
 .show{
     display: block;
 }
+.hide{
+    display: none;
+}
 .sidebar-sub-list li{
     margin-bottom: 10px!important;
 }
